@@ -1,0 +1,23 @@
+{
+  "name": "javanese-wedding-invitation",
+  "version": "1.0.0",
+  "description": "Interactive 3D Wedding Invitation with Javanese Cultural Theme",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -o",
+    "dev": "live-server",
+    "build": "echo 'Build process would go here'"
+  },
+  "keywords": ["wedding", "invitation", "javanese", "3d", "interactive"],
+  "author": "bimaraweb.com",
+  "license": "MIT",
+  "dependencies": {
+    "three": "^0.160.0",
+    "aos": "^2.3.4",
+    "gsap": "^3.12.2"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2"
+  }
+}
