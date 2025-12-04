@@ -1,0 +1,175 @@
+/* LOVE GIFT SECTION STYLES */
+.love-gift-section {
+    background: var(--background);
+    position: relative;
+    overflow: hidden;
+}
+
+.gift-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.gift-intro {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    color: var(--text-dark);
+    line-height: 1.7;
+}
+
+.bank-accounts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.bank-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.bank-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.bank-header {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.bank-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.bank-logo.bca {
+    background: linear-gradient(135deg, #1E3A8A, #3B82F6);
+}
+
+.bank-logo.mandiri {
+    background: linear-gradient(135deg, #DC2626, #EF4444);
+}
+
+.bank-header h3 {
+    color: var(--primary-dark);
+    margin: 0;
+}
+
+.bank-details {
+    text-align: center;
+}
+
+.account-owner {
+    color: var(--text-light);
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.account-number-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.account-number {
+    font-family: 'Courier New', monospace;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-dark);
+    margin: 0;
+    padding: 0.5rem 1rem;
+    background: var(--background);
+    border-radius: var(--border-radius);
+    border: 1px solid #e0e0e0;
+}
+
+.copy-btn {
+    background: linear-gradient(135deg, var(--accent-gold), #F9A825);
+    color: var(--primary-dark);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-weight: 500;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.copy-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+}
+
+.gift-message {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-top: 2rem;
+}
+
+.gift-message p {
+    color: var(--primary-dark);
+    font-size: 1.1rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gift-message i {
+    color: var(--accent-gold);
+    font-size: 1.2rem;
+}
+
+/* Responsive Design for Love Gift */
+@media (max-width: 768px) {
+    .account-number-container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .account-number {
+        font-size: 1rem;
+        width: 100%;
+    }
+    
+    .gift-intro {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .bank-accounts {
+        grid-template-columns: 1fr;
+    }
+    
+    .bank-card {
+        padding: 1.5rem;
+    }
+    
+    .account-number {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+}

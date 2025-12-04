@@ -1,0 +1,138 @@
+/* EVENTS SECTION STYLES */
+.events-section {
+    background: linear-gradient(135deg, var(--primary-light), var(--background));
+    position: relative;
+    overflow: hidden;
+}
+
+.events-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.event-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.event-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--accent-gold), var(--primary-medium));
+}
+
+.event-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.event-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary-medium));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: var(--white);
+    font-size: 2rem;
+}
+
+.event-card h3 {
+    color: var(--primary-dark);
+    margin-bottom: 1rem;
+}
+
+.event-date, .event-time, .event-location {
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.map-embed {
+    margin: 1.5rem 0;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-btn {
+    background: linear-gradient(135deg, var(--accent-gold), #F9A825);
+    color: var(--primary-dark);
+    border: none;
+    padding: 12px 25px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-weight: 500;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.calendar-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+}
+
+.akad .event-icon {
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary-medium));
+}
+
+.resepsi .event-icon {
+    background: linear-gradient(135deg, var(--accent-gold), #F9A825);
+}
+
+/* Responsive Design for Events */
+@media (max-width: 768px) {
+    .events-container {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+    
+    .event-card {
+        padding: 1.5rem;
+    }
+    
+    .event-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 1.5rem;
+    }
+    
+    .calendar-btn {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .event-card {
+        padding: 1rem;
+    }
+    
+    .event-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.2rem;
+    }
+    
+    .calendar-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}

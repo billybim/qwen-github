@@ -1,0 +1,59 @@
+/* FOOTER STYLES */
+.main-footer {
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary-medium));
+    color: var(--white);
+    padding: 3rem 0 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-content {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.footer-ornament {
+    margin-bottom: 2rem;
+}
+
+.footer-ornament .batik-border.horizontal {
+    background: transparent;
+    border: none;
+    height: auto;
+    opacity: 1;
+}
+
+.main-footer a {
+    color: var(--accent-gold);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.main-footer a:hover {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+.main-footer p {
+    color: var(--white);
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+    .footer-content {
+        padding: 0 15px;
+    }
+    
+    .footer-ornament {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-footer {
+        padding: 2rem 0 1.5rem;
+    }
+}
